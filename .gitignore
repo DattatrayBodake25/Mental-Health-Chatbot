@@ -1,0 +1,5 @@
+# Environment variables
+.env
+
+# Ignore virtual environment folder
+venv/

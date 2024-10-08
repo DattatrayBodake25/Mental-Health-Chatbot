@@ -1,0 +1,9 @@
+python-dotenv
+langchain
+sentence-transformers
+flask
+cohere
+streamlit
+langchain_community
+faiss-cpu
+numpy

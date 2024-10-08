@@ -1,1 +1,1 @@
-# Mental-Health-Chatbot
+# Mental Health Chatbot App Using RAG
