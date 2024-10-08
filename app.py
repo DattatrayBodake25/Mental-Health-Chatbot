@@ -4,8 +4,10 @@ from generate_func import generate_response
 import faiss
 from sentence_transformers import SentenceTransformer
 
-# Access the Cohere API key from Streamlit secrets
-cohere_api_key = st.secrets.get("cohere_api_key")
+import streamlit as st
+
+cohere_api_key = st.secrets["cohere_api_key"]
+
 
 if not cohere_api_key:
     st.error("Cohere API key not found. Please set it in Streamlit Cloud secrets.")
