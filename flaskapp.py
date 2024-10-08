@@ -56,5 +56,7 @@ def get_response():
         # Respond with a message guiding the user to ask about mental health
         return jsonify({"response": "I am trained on mental health topics. Please ask questions related to mental health. Suggested topics include: depression, anxiety, well-being, trauma, and more."})
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Default to 5000 if not set
+    app.run(host="0.0.0.0", port=port)
+
